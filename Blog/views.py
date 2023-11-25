@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Welcome To My Blog.")
+    return render(request, 'index.html', {'name': "SIyavash"})
