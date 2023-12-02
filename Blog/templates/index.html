@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home</title>
+        <title>Personal Blog</title>
     </head>
     <body>
-        {% if name %}
-            <h1>Hi {{name}}</h1>
-        {% else %}
-        <h1>HI</h1>
-        {% endif %}
+        <h1>Blog Posts</h1>
+        {% for blogpost in blogposts  %}
+            <h2>{{blogpost.title}}</h2>
+            <img src={{blogpost.image}} alt={{blogpost.title}}>
+            <p>{{blogpost.short_description}}</p>
+        {% endfor %}
     </body>
 </html>
