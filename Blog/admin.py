@@ -7,4 +7,4 @@ class BlogAdmin(admin.ModelAdmin):
     pass
 
 
-admin.site.register(models.BlogPost, BlogAdmin)
+admin.site.register(models.Post, BlogAdmin)
