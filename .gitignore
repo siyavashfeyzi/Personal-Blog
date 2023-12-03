@@ -1,13 +1,2 @@
 *__pycache__*
-PersonalBlog/__pycache__/__init__.cpython-312.pyc
-PersonalBlog/__pycache__/settings.cpython-312.pyc
-PersonalBlog/__pycache__/urls.cpython-312.pyc
-PersonalBlog/__pycache__/wsgi.cpython-312.pyc
-db.sqlite3
-Blog/__pycache__/__init__.cpython-312.pyc
-Blog/__pycache__/admin.cpython-312.pyc
-Blog/__pycache__/models.cpython-312.pyc
-Blog/__pycache__/views.cpython-312.pyc
-Blog/__pycache__/urls.cpython-312.pyc
-Blog/__pycache__/apps.cpython-312.pyc
-Blog/migrations/__pycache__/__init__.cpython-312.pyc
+Blog/images/*
