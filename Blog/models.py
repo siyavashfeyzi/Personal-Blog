@@ -5,5 +5,5 @@ class Post(models.Model):
     title = models.CharField(max_length=50)
     slug = models.SlugField()
     short_description = models.CharField(max_length=255)
-    image = models.ImageField(upload_to="Blog/images/")
+    image = models.ImageField(upload_to="Blog/static/img")
     blog_text = models.TextField()
