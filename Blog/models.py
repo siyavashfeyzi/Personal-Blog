@@ -13,5 +13,5 @@ class Post(models.Model):
 
     class Meta:
         indexes = [
-            models.Index(fields=["title"], name="title index"),
+            models.Index(fields=["title"], name="title_index"),
         ]
