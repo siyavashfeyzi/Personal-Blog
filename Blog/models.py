@@ -10,3 +10,8 @@ class Post(models.Model):
 
     def get_image_url(self):
         return self.image.url
+
+    class Meta:
+        indexes = [
+            models.Index(fields=["title"], name="title index"),
+        ]
