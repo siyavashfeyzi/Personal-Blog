@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Post(models.Model):
-    title = models.CharField(max_length=50)
+    title = models.CharField(max_length=255)
     slug = models.SlugField(default='-')
     short_description = models.CharField(max_length=255)
     image = models.ImageField(upload_to="image/", null=True, blank=True)
