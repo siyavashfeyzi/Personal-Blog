@@ -1,14 +1,38 @@
+{% load static %}
 <!DOCTYPE html>
+
 <html>
-    <head>
-        <title>Personal Blog</title>
-    </head>
-    <body>
-        <h1>Blog Posts</h1>
-        {% for post in posts  %}
-            <h2>{{post.title}}</h2>
-            <img src="{{post.get_image_url}}" alt={{post.title}} height= 150px width=200px>
-            <p>{{post.short_description}}</p>
-        {% endfor %}
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <title>Personal Blog</title>
+</head>
+
+<body>
+    <h1 class="container">Blog Posts</h1>
+    {% for post in posts %}
+    <div class="show_blog_short container mb-3">
+        <div class="row">
+            <div class="col-lg-2">
+                <img src="{{post.get_image_url}}" class="img-thumbnail" alt={{post.title}} height="150px" width="150px">
+            </div>
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="row border-bottom">
+                        <h2>{{post.title}}</h2>
+                    </div>
+                    <div class="row">
+                        <p>{{post.short_description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    {% endfor %}
+</body>
+
 </html>

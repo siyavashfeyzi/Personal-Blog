@@ -1,0 +1,24 @@
+body{
+    font-family: Arial;
+    background-image: url("img/peakpx.jpg");
+    background-size: cover;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(27, 26, 27, 0.349);
+    font-weight: bold;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 5px;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.show_blog_short{
+    background-color: rgba(27, 26, 27, 0.349);
+    font-weight: bold;
+    text-align: left;
+    color: aliceblue;
+    border-radius: 5px;
+}
